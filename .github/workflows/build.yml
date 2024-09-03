@@ -198,7 +198,7 @@ jobs:
         shell: bash
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Win-x64-Release-${{ github.sha }}
           path: ${{ env.APPLICATION_NAME }}_${{ steps.get_tag.outputs.TAG }}
